@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Scene",
-    "_name": "scene-2d",
+    "_name": "Small",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -40,9 +40,6 @@
       },
       {
         "__id__": 5
-      },
-      {
-        "__id__": 8
       }
     ],
     "_active": true,
@@ -174,26 +171,36 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "back",
+    "_name": "city",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
     },
-    "_children": [],
-    "_active": true,
-    "_components": [
+    "_children": [
       {
         "__id__": 6
       },
       {
-        "__id__": 7
+        "__id__": 9
+      },
+      {
+        "__id__": 12
+      }
+    ],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 16
       }
     ],
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 3.795000000000016,
-      "y": -0.12800000000005696,
+      "x": -6.562,
+      "y": 92.879,
       "z": 0
     },
     "_lrot": {
@@ -216,35 +223,81 @@
       "y": 0,
       "z": 0
     },
-    "_id": "3cDKyEgzBNirhHdSfeKohH"
+    "_id": "26Y6yt1GRK+rs3jvtIp1tC"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "terrain",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 5
+    },
+    "_children": [],
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 8
+      }
+    ],
+    "_prefab": null,
+    "_lpos": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_lrot": {
+      "__type__": "cc.Quat",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+    },
+    "_lscale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_layer": 33554432,
+    "_euler": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_id": "0dz/ATACxMk4Qq4jR2jWem"
   },
   {
     "__type__": "cc.UITransform",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
     "_enabled": true,
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 990.34,
-      "height": 668.874
+      "width": 800,
+      "height": 800
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
       "y": 0.5
     },
-    "_id": "d2QrYqnaxOnZpYyYp9FkIS"
+    "_id": "740w+TP2lBt7iTafE0E5/u"
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.TiledLayer",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 5
+      "__id__": 6
     },
     "_enabled": true,
     "__prefab": null,
@@ -258,84 +311,14 @@
       "b": 255,
       "a": 255
     },
-    "_spriteFrame": {
-      "__uuid__": "896fa2ff-182e-46bc-8ff9-685463ac6042@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_type": 0,
-    "_fillType": 0,
-    "_sizeMode": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_useGrayscale": false,
-    "_atlas": null,
-    "_id": "45POVe6PdIh43pAV9fPGgD"
+    "_id": "23ZHjvJctOm4KhUL3T95ov"
   },
   {
     "__type__": "cc.Node",
-    "_name": "TiledMap",
+    "_name": "fences",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 2
-    },
-    "_children": [
-      {
-        "__id__": 9
-      },
-      {
-        "__id__": 12
-      }
-    ],
-    "_active": false,
-    "_components": [
-      {
-        "__id__": 15
-      },
-      {
-        "__id__": 16
-      }
-    ],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 219.944,
-      "y": 164.54,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_layer": 33554432,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "f40LG8wmhPXrpT7mr0sayp"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Terrain",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 8
+      "__id__": 5
     },
     "_children": [],
     "_active": true,
@@ -374,7 +357,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "19tkLyKL5PE6DXb8MgrhqO"
+    "_id": "7a/3KKFQ9L+J98/bjIeP9W"
   },
   {
     "__type__": "cc.UITransform",
@@ -387,15 +370,15 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 2240,
-      "height": 2240
+      "width": 800,
+      "height": 800
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
       "y": 0.5
     },
-    "_id": "c2IZ4OhghJMK/9YH1U5NDg"
+    "_id": "1ettQwtrpBqq2Ng1bYbCyI"
   },
   {
     "__type__": "cc.TiledLayer",
@@ -416,17 +399,17 @@
       "b": 255,
       "a": 255
     },
-    "_id": "97wXUU1ghIzIJizUSTcHhP"
+    "_id": "2bV7KYhphG+ayRxGV7cT00"
   },
   {
     "__type__": "cc.Node",
-    "_name": "Ornaments",
+    "_name": "trees",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 8
+      "__id__": 5
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 13
@@ -462,7 +445,7 @@
       "y": 0,
       "z": 0
     },
-    "_id": "7fUJtrVOBMT6/FzORW6ubw"
+    "_id": "0cxkhzen5ImK4rBuxQZKCW"
   },
   {
     "__type__": "cc.UITransform",
@@ -475,15 +458,15 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 2240,
-      "height": 2240
+      "width": 800,
+      "height": 800
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
       "y": 0.5
     },
-    "_id": "873njp2I5OkZB6KWnVQzr2"
+    "_id": "03Pir9qEVA2r3GKb5DW8xI"
   },
   {
     "__type__": "cc.TiledLayer",
@@ -504,45 +487,45 @@
       "b": 255,
       "a": 255
     },
-    "_id": "e8BEk//49LoLBKrl5WX6uB"
+    "_id": "23xhanz15LS7AUC43uhE2I"
   },
   {
     "__type__": "cc.UITransform",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 8
+      "__id__": 5
     },
     "_enabled": true,
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 2240,
-      "height": 2240
+      "width": 800,
+      "height": 800
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
       "y": 0.5
     },
-    "_id": "d3m9tyOrBMNKyhS63vl9K6"
+    "_id": "61yxMicnpAY6LMvvhN3XVS"
   },
   {
     "__type__": "cc.TiledMap",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 8
+      "__id__": 5
     },
     "_enabled": true,
     "__prefab": null,
     "_tmxFile": {
-      "__uuid__": "29884914-368e-41f8-8b5b-cdb642747492",
+      "__uuid__": "55a655a3-a8b8-4e67-a67c-8d1806e2229a",
       "__expectedType__": "cc.TiledMapAsset"
     },
     "_enableCulling": true,
     "cleanupImageCache": true,
-    "_id": "dbOumUwjZF0avJ7C4bbXVz"
+    "_id": "2btkCepKtO/bbS/ZefL5hb"
   },
   {
     "__type__": "cc.UITransform",
