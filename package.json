@@ -1,9 +1,13 @@
 {
   "name": "Tiled Example",
   "uuid": "4265c38c-17b5-4961-8a46-a2b66485f92b",
-  "version": "3.6.1",
+  "version": "3.6.2",
   "creator": {
-    "version": "3.6.1"
+    "version": "3.6.2"
   },
-  "description": "Example of tiles"
+  "description": "Example of tiles",
+  "dependencies": {
+    "density-clustering": "^1.3.0",
+    "hull.js": "^1.0.3"
+  }
 }

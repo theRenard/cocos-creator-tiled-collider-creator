@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.6",
+  "__version__": "1.0.7",
   "modules": {
     "cache": {
       "base": {
@@ -87,6 +87,15 @@
       },
       "dragon-bones": {
         "_value": true
+      },
+      "animation": {
+        "_value": true
+      },
+      "skeletal-animation": {
+        "_value": true
+      },
+      "marionette": {
+        "_value": true
       }
     },
     "includeModules": [
@@ -115,5 +124,8 @@
       "value": false,
       "version": ""
     }
+  },
+  "macroConfig": {
+    "BATCHER2D_MEM_INCREMENT": 1440
   }
 }
