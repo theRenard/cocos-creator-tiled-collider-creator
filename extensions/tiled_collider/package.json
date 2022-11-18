@@ -1,0 +1,60 @@
+{
+    "package_version": 2,
+    "version": "1.0.0",
+    "name": "tiled_collider",
+    "description": "i18n:tiled_collider.description",
+    "main": "./dist/main.js",
+    "dependencies": {
+        "fs-extra": "^10.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^16.0.1",
+        "@types/fs-extra": "^9.0.5",
+        "typescript": "^4.3.4"
+    },
+    "panels": {
+        "default": {
+            "title": "tiled_collider Default Panel",
+            "type": "dockable",
+            "main": "dist/panels/default",
+            "size": {
+                "min-width": 400,
+                "min-height": 300,
+                "width": 1024,
+                "height": 600
+            }
+        }
+    },
+    "contributions": {
+        "menu": [
+            {
+                "path": "i18n:menu.panel/tiled_collider",
+                "label": "i18n:tiled_collider.open_panel",
+                "message": "open-panel"
+            },
+            {
+                "path": "i18n:menu.develop/tiled_collider",
+                "label": "i18n:tiled_collider.send_to_panel",
+                "message": "send-to-panel"
+            }
+        ],
+        "messages": {
+            "open-panel": {
+                "methods": [
+                    "openPanel"
+                ]
+            },
+            "send-to-panel": {
+                "methods": [
+                    "default.hello"
+                ]
+            }
+        }
+    },
+    "author": "Daniele Tabanella",
+    "editor": ">=3.6.2",
+    "scripts": {
+        "build": "tsc -b",
+        "watch": "tsc -w"
+    }
+}
