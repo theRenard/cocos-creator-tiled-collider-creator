@@ -12,14 +12,18 @@ export class GuyGenerator extends Component {
 
     generateGuy() {
         const guy = instantiate(this.guyPrefab);
-        const position = this.node.getWorldPosition();
+        const position = this.node.getPosition();
         const transform = this.node.getComponent(UITransform);
         this.node.addChild(guy);
-        const x = math.randomRange(position.x - transform.width / 2, position.x + transform.width / 2);
-        const y = math.randomRange(position.y - transform.height / 2, position.y + transform.height / 2);
+        const x = math.randomRange(- transform.width / 2, transform.width / 2);
+        const y = 0;
+        console.log(position.x, x, transform.width);
         const guyPosition = new math.Vec3(x, y, 0);
-        this.node.setWorldPosition(guyPosition);
-        setTimeout(this.generateGuy.bind(this), 500);
+        guy.setPosition(guyPosition);
+        setTimeout(this.generateGuy.bind(this), 200);
+        setTimeout(() => {
+            guy.destroy();
+        }, 10000);
     }
 
 }
