@@ -126,6 +126,6 @@
     }
   },
   "macroConfig": {
-    "BATCHER2D_MEM_INCREMENT": 1440
+    "BATCHER2D_MEM_INCREMENT": 1800
   }
 }

@@ -1,13 +1,19 @@
 {
-  "name": "Tiled Example",
+  "name": "Tiled + Collider",
   "uuid": "4265c38c-17b5-4961-8a46-a2b66485f92b",
   "version": "3.6.2",
   "creator": {
     "version": "3.6.2"
   },
-  "description": "Example of tiles",
+  "scripts": {
+    "deploy": "gh-pages -d build/web-desktop"
+  },
+  "description": "Example of tiles and collider in cocos creator",
   "dependencies": {
     "density-clustering": "^1.3.0",
     "hull.js": "^1.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
