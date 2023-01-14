@@ -2,9 +2,9 @@
 
 ![preview](./assets/Screenshots/cocos.png)
 
-Demo here: https://tabanella.me/cocos-engine-5-ways-to-move/
+Demo here: http://tabanella.me/cocos-creator-tiled-collider-creator/
 
-Blog here: https://blog.tabanella.me/articles/cocos-creator/five-ways-to-move-in-cocos-creator/
+Blog here: https://blog.tabanella.me/articles/cocos-creator/fundamentals/tiled-and-collisions/
 
 1. Install the dependencies in package.json
 
