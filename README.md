@@ -4,7 +4,7 @@
 
 Demo here: http://tabanella.me/cocos-creator-tiled-collider-creator/
 
-Blog here: https://blog.tabanella.me/articles/cocos-creator/fundamentals/tiled-and-collisions/
+Article here: https://renard.land/articles/cocos-creator/fundamentals/tiled-and-collisions/
 
 1. Install the dependencies in package.json
 
