@@ -8,8 +8,7 @@
       "__id__": 1
     },
     "optimizationPolicy": 0,
-    "persistent": false,
-    "asyncLoadAssets": false
+    "persistent": false
   },
   {
     "__type__": "cc.Node",
@@ -56,6 +55,7 @@
       "y": 1,
       "z": 1
     },
+    "_mobility": 0,
     "_layer": 33554432,
     "_euler": {
       "__type__": "cc.Vec3",
@@ -104,6 +104,7 @@
       "y": 1,
       "z": 1
     },
+    "_mobility": 0,
     "_layer": 33554432,
     "_euler": {
       "__type__": "cc.Vec3",
@@ -192,7 +193,10 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "35A3qUoWxHF5ltm2rqpxnz"
+    "fileId": "35A3qUoWxHF5ltm2rqpxnz",
+    "instance": null,
+    "targetOverrides": null,
+    "nestedPrefabInstanceRoots": null
   },
   {
     "__type__": "cc.UITransform",
@@ -246,7 +250,7 @@
       "x": 0,
       "y": 0
     },
-    "_angularVelocity": 100,
+    "_angularVelocity": 0,
     "_fixedRotation": false,
     "_id": ""
   },
@@ -291,6 +295,8 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "dbMSjtwUFG4p2BYY0eY/RT"
+    "fileId": "dbMSjtwUFG4p2BYY0eY/RT",
+    "instance": null,
+    "targetOverrides": null
   }
 ]
