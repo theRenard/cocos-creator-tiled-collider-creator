@@ -17,7 +17,7 @@ export class GuyGenerator extends Component {
         this.node.addChild(guy);
         const x = math.randomRange(- transform.width / 2, transform.width / 2);
         const y = 0;
-        console.log(position.x, x, transform.width);
+        // console.log(position.x, x, transform.width);
         const guyPosition = new math.Vec3(x, y, 0);
         guy.setPosition(guyPosition);
         setTimeout(this.generateGuy.bind(this), 200);
